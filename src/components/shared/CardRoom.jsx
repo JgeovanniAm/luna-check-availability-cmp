@@ -648,7 +648,7 @@ function CardRoom({ rooms, variant = 'defualt' }) {
                         paddingRight: '44px',
                       }}
                       data-cta-room={index}
-                      href={`/contact.php`}
+                      href={`contact.php?room=${room?.name?.split(' ')[1]?.slice(1)}`}
                       onClick={handleClickBookCTA}
                       className={styles['quick-link-check-availability']}
                     >
